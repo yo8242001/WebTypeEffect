@@ -15,11 +15,23 @@ html, body {
 
 #box {
     width: 50%;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 400px 0;
+    padding: 360px 0;
+    font-size: 0.8em;
 }
 /* 偽元素 - 後面 */
 .type:after {
     content: "";
     border-right: 1px solid #fff;
+    animation: 0.5s infinite shine;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
